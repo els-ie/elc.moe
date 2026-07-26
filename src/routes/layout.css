@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=McLaren&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-mclaren: "McLaren", sans-serif;
+  --color-base: oklch(0.2201 0.0095 159.21);
+  --color-mantle: oklch(19% 0.0218 226.6);
+  --color-elsielightgreen: oklch(0.8634 0.1495 155.86 /100%);
+  --color-elsiedarkgreen: oklch(31.8% 0.0208 177.4 / 44%);
+  --color-elsiehoverlightgreen: oklch(0.8634 0.1495 155.86 /100%);
+  --color-elsiehovergold: oklch(0.8812 0.1156 91.15 /80%);
+  --color-strokebase: oklch(0.541 0.1313 283.19);
+  --color-strokehighlight: oklch(0.8848 0.0755 221.96);
+}
+
+.hollow-text {
+  color: transparent; /* Makes the inside invisible */
+  -webkit-text-stroke: 2px oklch(0.541 0.1313 283.19 / 8%);
+}
