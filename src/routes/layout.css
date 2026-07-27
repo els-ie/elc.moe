@@ -10,8 +10,8 @@
   --color-elsiehovergold: oklch(0.8812 0.1156 91.15 /80%);
   --color-strokebase: oklch(0.541 0.1313 283.19);
   --color-strokehighlight: oklch(0.8848 0.0755 221.96);
-  --bg-mantle: rgb(17, 32, 34)
-  --bg-base: rgb(2, 19, 28)
+  --bg-mantle: #112022
+  --bg-base: #02131c
 }
 
 .hollow-text {
@@ -20,37 +20,52 @@
   paint-order: stroke fill;
 }
 
-@utility bg-custom-radial {
-  --vpos: 10%;
-  position: absolute;
-  background-image: radial-gradient(circle at 20% var(--vpos), rgb(17, 32, 34), rgb(2, 19, 28) 77%);
-  @media (min-width: 640px) {
-    --vpos: 30%;
-  }
-}
-
 @utility elsie-text {
-  @apply absolute inline-block text-9xl font-mclaren;
- 
   --tracking: 0.1em;
+
+  position: absolute;
+  display: inline-block;
+  font-family: "McLaren", sans-serif;
+  font-size: var(--text-9xl);
+  line-height: var(--text-9xl--line-height);
   letter-spacing: var(--tracking);
 
   @media (min-width: 640px) {
     --tracking: 44px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     --tracking: 65px;
   }
 }
-
-html body {
-  position: absolute;
-  overflow: hidden;
-  margin: 0;
-  max-height: 100%;
-  background: radial-gradient(
-      circle at 30% 10%,
-      rgb(17, 32, 34),
-      rgb(2, 19, 28) 77%
-    );
+body {
 }
+
+:root {
+  --vpos: 10%;
+  --hpos: 30%;
+  height:100%;
+  background-repeat: no-repeat;
+  background: radial-gradient(
+      circle at var(--hpos) var(--vpos),
+      #112022,
+      #02131c 77%
+    );
+
+    @media (min-width: 640px) {
+      --hpos: 35%;
+      --vpos: 15%;
+    }
+
+    @media (min-width: 1280px) {
+        --hpos: 35%;
+    }
+
+    @media (min-width: 1536px) {
+        --vpos: 30%;
+        --hpos: 25%;
+    }
+
+
+}
+
+

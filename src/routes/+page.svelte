@@ -10,44 +10,40 @@
 <!--   loop -->
 <!-- ></video> -->
 <!---->
-<div class="bg-custom-radial w-dvw h-dvh -z-10"></div>
+<!-- <div class="bg-custom-radial w-dvw h-dvh -z-10"></div> -->
 
 <body>
-  <div class="container relative w-dvw h-dvh">
-    <!-- Elsie  -->
-    <div
-      class="relative flex w-full min-h-1/7 sm:h-[30%] justify-center sm:justify-start pt-45 sm:max-lg:px-[12%] lg:px-40 items-end z-10"
-    >
+  <main class="flex flex-col min-h-screen">
+    <div class="flex flex-col justify-center">
+      <!-- Elsie  -->
       <div
-        class="elsie-text mix-blend-screen hollow-text select-none"
-        aria-hidden="true"
+        class="relative min-h-200 flex justify-center lg:justify-start pt-10 lg:pt-55 xl:pt-65 2xl:pt-85 lg:pl-64 z-10"
       >
-        elsie
-      </div>
+        <div
+          class="elsie-text mix-blend-screen hollow-text select-none"
+          aria-hidden="true"
+        >
+          elsie
+        </div>
 
-      <div
-        class="elsie-text mix-blend-color-dodge [text-shadow:1px_2px_0px_oklch(0.8812_0.0732__59.26/80%)] select-none"
-        aria-hidden="true"
-      >
-        elsie
-      </div>
+        <div
+          class="elsie-text mix-blend-color-dodge [text-shadow:1px_2px_0px_oklch(0.8812_0.0732__59.26/80%)] select-none"
+          aria-hidden="true"
+        >
+          elsie
+        </div>
 
-      <div
-        class="elsie-text text-transparent bg-clip-text bg-linear-to-b mix-blend-lighten to-elsielightgreen
+        <div
+          class="elsie-text text-transparent bg-clip-text bg-linear-to-b mix-blend-lighten to-elsielightgreen
         from-49% from-elsiedarkgreen hover:from-elsiehovergold
         hover:from-5% hover:to-80%"
-        style="filter:blur(6px)"
-      >
-        <h1>elsie</h1>
+          style="filter:blur(6px)"
+        >
+          elsie
+        </div>
       </div>
     </div>
-    <!-- <div class="h-10"></div> -->
-    <!-- <div -->
-    <!--   class="relative sm:justify-start justify-center items-end text-orange-300 text-[2rem] sm:text-4xl text-nowrap [text-shadow:1px_2px_0px_rgb(200_100_171)]" -->
-    <!-- > -->
-    <!--   <p>✦ Under construction ✦</p> -->
-    <!-- </div> -->
-  </div>
+  </main>
 </body>
 
 <style>
