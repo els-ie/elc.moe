@@ -43,7 +43,8 @@ body {
 :root {
   --vpos: 10%;
   --hpos: 30%;
-  min-height:100svh;
+  heigh: 100vh;
+  min-height: 100svh;
   overflow: hidden;
   background-repeat: no-repeat;
   background: radial-gradient(
