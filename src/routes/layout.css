@@ -41,3 +41,11 @@
     --tracking: 65px;
   }
 }
+
+html {
+  background: radial-gradient(
+      circle at 30% 10%,
+      rgb(17, 32, 34),
+      rgb(2, 19, 28) 77%
+    );
+}
