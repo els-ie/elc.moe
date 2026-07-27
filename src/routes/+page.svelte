@@ -17,7 +17,7 @@
     <div class="flex flex-col justify-center">
       <!-- Elsie  -->
       <div
-        class="relative min-h-200 flex justify-center lg:justify-start pt-10 lg:pt-55 xl:pt-65 2xl:pt-85 lg:pl-64 z-10"
+        class="relative min-h-200 flex justify-center pt-10 md:justify-start md:pt-65 md:pl-72 z-10"
       >
         <div
           class="elsie-text mix-blend-screen hollow-text select-none"

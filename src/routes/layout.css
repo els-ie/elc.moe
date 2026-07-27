@@ -2,13 +2,13 @@
 @import "tailwindcss";
 
 @theme {
+  --breakpoint-xs: 480px;
   --font-mclaren: "McLaren", sans-serif;
   --color-base: oklch(0.2201 0.0095 159.21);
   --color-mantle: oklch(19% 0.0218 226.6);
   --color-elsielightgreen: oklch(0.8634 0.1495 155.86 /100%);
   --color-elsiedarkgreen: oklch(31.8% 0.0208 177.4 / 48%);
   --color-elsiehovergold: oklch(0.8812 0.1156 91.15 /80%);
-  --color-strokebase: oklch(0.541 0.1313 283.19);
   --color-strokehighlight: oklch(0.8848 0.0755 221.96);
   --bg-mantle: #112022
   --bg-base: #02131c
@@ -30,44 +30,29 @@
   line-height: var(--text-9xl--line-height);
   letter-spacing: var(--tracking);
 
-  @media (min-width: 640px) {
+  @media screen and (min-width: 768px) {
     --tracking: 44px;
   }
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     --tracking: 65px;
   }
 }
-body {
-}
 
 :root {
-  --vpos: 10%;
-  --hpos: 30%;
-  heigh: 100vh;
-  min-height: 100svh;
+  --vpos: 30px;
+  --hpos: 180px;
   overflow: hidden;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  baclground-color: #02131c;
   background: radial-gradient(
       circle at var(--hpos) var(--vpos),
       #112022,
       #02131c 77%
     );
 
-    @media (min-width: 640px) {
-      --hpos: 35%;
-      --vpos: 15%;
+    @media screen and (min-width: 768px) {
+      --vpos: 350px;
+      --hpos: 550px;
     }
-
-    @media (min-width: 1280px) {
-        --hpos: 35%;
-    }
-
-    @media (min-width: 1536px) {
-        --vpos: 30%;
-        --hpos: 25%;
-    }
-
-
 }
-
-
