@@ -16,7 +16,7 @@
   <div class="container relative w-dvw h-dvh">
     <!-- Elsie  -->
     <div
-      class="relative w-full min-h-1/7 sm:h-[30%] justify-center sm:justify-start pt-45 sm:max-lg:px-[12%] lg:px-40 flex items-end z-10"
+      class="relative flex w-full min-h-1/7 sm:h-[30%] justify-center sm:justify-start pt-45 sm:max-lg:px-[12%] lg:px-40 items-end z-10"
     >
       <div
         class="elsie-text mix-blend-screen hollow-text select-none"
@@ -41,12 +41,12 @@
         <h1>elsie</h1>
       </div>
     </div>
-    <div class="h-10"></div>
-    <div
-      class="flex h-0 sm:pl-70 md:pl-100 lg:pl-115 sm:justify-start justify-center items-center text-orange-300 text-[2rem] sm:text-4xl text-nowrap [text-shadow:1px_2px_0px_rgb(200_100_171)]"
-    >
-      <p>✦ Under construction ✦</p>
-    </div>
+    <!-- <div class="h-10"></div> -->
+    <!-- <div -->
+    <!--   class="relative sm:justify-start justify-center items-end text-orange-300 text-[2rem] sm:text-4xl text-nowrap [text-shadow:1px_2px_0px_rgb(200_100_171)]" -->
+    <!-- > -->
+    <!--   <p>✦ Under construction ✦</p> -->
+    <!-- </div> -->
   </div>
 </body>
 

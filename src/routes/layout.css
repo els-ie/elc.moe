@@ -47,7 +47,6 @@ html body {
   position: absolute;
   overflow: hidden;
   margin: 0;
-  overscroll-behavior-y: none;
   max-height: 100%;
   background: radial-gradient(
       circle at 30% 10%,
