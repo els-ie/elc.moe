@@ -22,6 +22,7 @@
 
 @utility bg-custom-radial {
   --vpos: 10%;
+  position: absolute;
   background-image: radial-gradient(circle at 20% var(--vpos), rgb(17, 32, 34), rgb(2, 19, 28) 77%);
   @media (min-width: 640px) {
     --vpos: 30%;
@@ -45,6 +46,9 @@
 html body {
   position: absolute;
   overflow: hidden;
+  margin: 0;
+  overscroll-behavior-y: none;
+  max-height: 100%;
   background: radial-gradient(
       circle at 30% 10%,
       rgb(17, 32, 34),

@@ -10,7 +10,7 @@
 <!--   loop -->
 <!-- ></video> -->
 <!---->
-<div class="absolute bg-custom-radial w-dvw h-dvh overflow-hidden -z-10"></div>
+<div class="bg-custom-radial w-dvw h-dvh -z-10"></div>
 
 <body>
   <div class="container relative w-dvw h-dvh">
