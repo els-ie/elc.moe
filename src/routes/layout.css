@@ -6,14 +6,38 @@
   --color-base: oklch(0.2201 0.0095 159.21);
   --color-mantle: oklch(19% 0.0218 226.6);
   --color-elsielightgreen: oklch(0.8634 0.1495 155.86 /100%);
-  --color-elsiedarkgreen: oklch(31.8% 0.0208 177.4 / 44%);
-  --color-elsiehoverlightgreen: oklch(0.8634 0.1495 155.86 /100%);
+  --color-elsiedarkgreen: oklch(31.8% 0.0208 177.4 / 48%);
   --color-elsiehovergold: oklch(0.8812 0.1156 91.15 /80%);
   --color-strokebase: oklch(0.541 0.1313 283.19);
   --color-strokehighlight: oklch(0.8848 0.0755 221.96);
+  --bg-mantle: rgb(17, 32, 34)
+  --bg-base: rgb(2, 19, 28)
 }
 
 .hollow-text {
-  color: transparent; /* Makes the inside invisible */
+  color: transparent;
   -webkit-text-stroke: 2px oklch(0.541 0.1313 283.19 / 8%);
+  paint-order: stroke fill;
+}
+
+@utility bg-custom-radial {
+  --vpos: 10%;
+  background-image: radial-gradient(circle at 20% var(--vpos), rgb(17, 32, 34), rgb(2, 19, 28) 77%);
+  @media (min-width: 640px) {
+    --vpos: 30%;
+  }
+}
+
+@utility elsie-text {
+  @apply absolute inline-block text-9xl font-mclaren;
+ 
+  --tracking: 0.1em;
+  letter-spacing: var(--tracking);
+
+  @media (min-width: 640px) {
+    --tracking: 44px;
+  }
+  @media (min-width: 768px) {
+    --tracking: 65px;
+  }
 }
