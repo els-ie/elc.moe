@@ -42,7 +42,9 @@
   }
 }
 
-html {
+html body {
+  position: absolute;
+  overflow: hidden;
   background: radial-gradient(
       circle at 30% 10%,
       rgb(17, 32, 34),
