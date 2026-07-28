@@ -2,8 +2,7 @@
 @import "tailwindcss";
 
 @theme {
-  --breakpoint-xs: 480px;
-  --font-mclaren: "McLaren", sans-serif;
+  --font-mclaren: 'McLaren', sans-serif;
   --color-base: oklch(0.2201 0.0095 159.21);
   --color-mantle: oklch(19% 0.0218 226.6);
   --color-elsielightgreen: oklch(0.8634 0.1495 155.86 /100%);
@@ -25,7 +24,7 @@
 
   position: absolute;
   display: inline-block;
-  font-family: "McLaren", sans-serif;
+  font-family: 'McLaren', sans-serif;
   font-size: var(--text-9xl);
   line-height: var(--text-9xl--line-height);
   letter-spacing: var(--tracking);
@@ -38,21 +37,62 @@
   }
 }
 
-:root {
+/* body { */
+/*   position: relative; */
+/*   height: 100dvh; */
+/*   background: #02131c; */
+/*   overflow: hidden; */
+/**/
+/*   background-repeat: no-repeat; */
+/*   background-attachment: fixed; */
+/**/
+/**/
+/* } */
+/**/
+/* body::before { */
+/*   position: absolute; */
+/*   --vpos: 30px; */
+/*   --hpos: 180px; */
+/*   background: radial-gradient( */
+/*       circle at var(--hpos) var(--vpos), */
+/*       #112022, */
+/*       #02131c 77% */
+/*     ); */
+/**/
+/*     @media screen and (min-width: 768px) { */
+/*       --vpos: 350px; */
+/*       --hpos: 550px; */
+/*     } */
+/* } */
+
+body {
+  height: 100vh;
   --vpos: 30px;
   --hpos: 180px;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  baclground-color: #02131c;
   background: radial-gradient(
       circle at var(--hpos) var(--vpos),
       #112022,
       #02131c 77%
     );
+  position: relative;
+  overflow: hidden;
 
     @media screen and (min-width: 768px) {
       --vpos: 350px;
       --hpos: 550px;
     }
+}
+
+.gradient-circle {
+  filter: blur(120px);
+  width: 400px;
+  height: 400px;
+  position: 0;
+  border-radius: 50%;
+  background: radial-gradient(
+      circle,
+      #44d3e3,
+      #44d3e300 70%
+    );
+
 }

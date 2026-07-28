@@ -1,5 +1,10 @@
 <script lang="ts">
-  // import stars from "$lib/assets/stars.webm";
+  let m = $state({ x: 0, y: 0 });
+
+  function handleMousemove(event) {
+    m.x = event.clientX;
+    m.y = event.clientY;
+  }
 </script>
 
 <!-- <video -->
@@ -12,8 +17,11 @@
 <!---->
 <!-- <div class="bg-custom-radial w-dvw h-dvh -z-10"></div> -->
 
+<!-- svelte-ignore a11y_no_static_element_interactions -->
+
 <body>
   <main class="flex flex-col min-h-screen">
+    <!-- <div class="absolute gradient-circle"></div> -->
     <div class="flex flex-col justify-center">
       <!-- Elsie  -->
       <div
