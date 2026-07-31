@@ -1,41 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=McLaren&display=swap");
-@import "tailwindcss";
+@import url("reset.css") layer(reset);
 
-@theme {
-  --font-mclaren: 'McLaren', sans-serif;
-  --color-base: oklch(0.2201 0.0095 159.21);
-  --color-mantle: oklch(19% 0.0218 226.6);
-  --color-elsielightgreen: oklch(0.8634 0.1495 155.86 /100%);
-  --color-elsiedarkgreen: oklch(31.8% 0.0208 177.4 / 48%);
-  --color-elsiehovergold: oklch(0.8812 0.1156 91.15 /80%);
-  --color-strokehighlight: oklch(0.8848 0.0755 221.96);
-  --bg-mantle: #112022
-  --bg-base: #02131c
+:root {
+	color-scheme: light dark;
+	--elsie-lightgreen: oklch(0.8634 0.1495 155.86 / 100%);
+	--elsie-darkgreen: oklch(31.8% 0.0208 177.4 / 48%);
+	--elsie-hovergold: oklch(0.8812 0.1156 91.15 / 80%);
+	--bg-mantle: rgb(17 32 34);
+	--bg-base: rgb(2 19 28);
+	margin: 0;
+	padding: 0;
+
+  --x: 0px
+  --y: 0px
 }
 
-.hollow-text {
-  color: transparent;
-  -webkit-text-stroke: 2px oklch(0.541 0.1313 283.19 / 8%);
-  paint-order: stroke fill;
+body {
+	height: 100dvh;
+	background: radial-gradient(
+		circle at var(--hpos, 11.25em) var(--vpos, 1.9em),
+		var(--bg-mantle),
+		var(--bg-base) 77%
+	);
+
+	border: 1px dotted red;
+	position: relative;
+	overflow: hidden;
+
+	@media screen and (min-width: 768px) {
+		--vpos: 21.9em;
+		--hpos: 34.4em;
+	}
 }
 
-@utility elsie-text {
-  --tracking: 0.1em;
-
-  position: absolute;
-  display: inline-block;
-  font-family: 'McLaren', sans-serif;
-  font-size: var(--text-9xl);
-  line-height: var(--text-9xl--line-height);
-  letter-spacing: var(--tracking);
-
-  @media screen and (min-width: 768px) {
-    --tracking: 44px;
-  }
-  @media screen and (min-width: 1024px) {
-    --tracking: 65px;
-  }
+.elsie-container {
+	max-width: 100dvw;
+	min-height: 100dvh;
+	border: 3px dashed white;
+  display: grid;
+  place-content: center;
 }
+
 
 /* body { */
 /*   position: relative; */
@@ -45,54 +50,12 @@
 /**/
 /*   background-repeat: no-repeat; */
 /*   background-attachment: fixed; */
-/**/
-/**/
-/* } */
-/**/
-/* body::before { */
-/*   position: absolute; */
-/*   --vpos: 30px; */
-/*   --hpos: 180px; */
-/*   background: radial-gradient( */
-/*       circle at var(--hpos) var(--vpos), */
-/*       #112022, */
-/*       #02131c 77% */
-/*     ); */
-/**/
-/*     @media screen and (min-width: 768px) { */
-/*       --vpos: 350px; */
-/*       --hpos: 550px; */
-/*     } */
-/* } */
-
-body {
-  height: 100vh;
-  --vpos: 30px;
-  --hpos: 180px;
-  background: radial-gradient(
-      circle at var(--hpos) var(--vpos),
-      #112022,
-      #02131c 77%
-    );
-  position: relative;
-  overflow: hidden;
-
-    @media screen and (min-width: 768px) {
-      --vpos: 350px;
-      --hpos: 550px;
-    }
-}
 
 .gradient-circle {
-  filter: blur(120px);
-  width: 400px;
-  height: 400px;
-  position: 0;
-  border-radius: 50%;
-  background: radial-gradient(
-      circle,
-      #44d3e3,
-      #44d3e300 70%
-    );
-
+	filter: blur(120px);
+	width: 400px;
+	height: 400px;
+	position: 0;
+	border-radius: 50%;
+	background: radial-gradient(circle, #44d3e3, #44d3e300 70%);
 }
