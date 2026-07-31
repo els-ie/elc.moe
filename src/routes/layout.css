@@ -23,7 +23,6 @@ body {
 		var(--bg-base) 77%
 	);
 
-	border: 1px dotted red;
 	position: relative;
 	overflow: hidden;
 
@@ -36,20 +35,9 @@ body {
 .elsie-container {
 	max-width: 100dvw;
 	min-height: 100dvh;
-	border: 3px dashed white;
   display: grid;
   place-content: center;
 }
-
-
-/* body { */
-/*   position: relative; */
-/*   height: 100dvh; */
-/*   background: #02131c; */
-/*   overflow: hidden; */
-/**/
-/*   background-repeat: no-repeat; */
-/*   background-attachment: fixed; */
 
 .gradient-circle {
 	filter: blur(120px);
