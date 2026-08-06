@@ -1,53 +1,59 @@
 <script lang="ts">
 import { Spring } from 'svelte/motion';
 
-let coordinates = $state({ x: 0, y: 0 });
+let coords = $state({
+  glowX: 0,
+  glowY: 0,
+  gradX: -333,
+  gradY: -333
+});
 
 function onpointermove(event: PointerEvent) {
   const target = event.currentTarget as HTMLElement;
   const rect = target.getBoundingClientRect();
-  coordinates.x = event.clientX - rect.left - rect.width / 2;
-  coordinates.y = event.clientY - rect.top - rect.height / 2;
+  coords.glowX = event.clientX - rect.left - rect.width / 2;
+  coords.glowY = event.clientY - rect.top - rect.height / 2;
+  coords.gradX = event.clientX - rect.left - rect.width / 2;
+  coords.gradY = event.clientY - rect.top - rect.height / 2;
 }
 
 function onpointerleave() {
-  coordinates.x = 0
-  coordinates.y = 0
+  coords.glowX = 0
+  coords.glowY = 0
+  coords.gradX = -333
+  coords.gradY = -333
 }
 
 </script>
 
-<div class="smol-stack"
-    style="--x: {coordinates.x}rem; --y: {coordinates.y}rem"
+<div class="elsie-stack"
+    style="--gradX: {coords.gradX}px; --gradY: {coords.gradY}px; --glowX: {coords.glowX}rem; --glowY: {coords.glowY}rem"
     {onpointermove}
     {onpointerleave}
     aria-hidden="true">
-  <top
-    class="elsie-top"
+  <span class="elsie-stack glow"
+    aria-hidden="true">
+    elsie
+  </span>
+  <span class="elsie-stack bottom">
+    elsie
+  </span>
+  <span
+    class="elsie-stack top"
     aria-hidden="true"
     >
     elsie
-  </top>
-  <bottom class="elsie-bottom">
-    elsie
-  </bottom>
-  <glow class="elsie-glow"
-    aria-hidden="true">
-    elsie
-  </glow>
+  </span>
 </div>
 
 <style>
 
-.smol-stack {
+.elsie-stack {
   display: grid;
   grid-template-areas: "stack";
 }
 
-.smol-stack > * {
-  grid-area: stack
-}
-.smol-stack top, .smol-stack bottom, .smol-stack glow {
+.elsie-stack.top, .elsie-stack.bottom, .elsie-stack.glow {
   grid-area: stack;
   place-self: center;
   font-family: "McLaren", sans-serif;
@@ -62,19 +68,23 @@ function onpointerleave() {
     --tracking: .34em;
   }
 
-  }
-
-.elsie-top {
-  text-shadow: .01em .015em 0em oklch(93.4% 0.0431 74.2 / 85%);
-  background: conic-gradient(from 10deg, oklch(0.541 0.1313 283.19 / 39%), white);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-stroke: .015em transparent;
-  color: oklch(19% 0.022 182);
-  pointer-events: none
 }
 
-.elsie-bottom {
+.elsie-stack.top {
+  text-shadow: .01em .015em 0em oklch(93.4% 0.0431 74.2 / 85%);
+  background: radial-gradient(
+      circle 1.5em at calc(50% + var(--gradX, 0em)) calc(50% + var(--gradY, 0em)),
+      oklch(85.1% 0.0448 283.2) 0%,
+      oklch(54.1% 0.1313 283.2) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: .025em transparent;
+  color: oklch(19% 0.022 182);
+  pointer-events: none;
+}
+
+.elsie-stack.bottom {
   background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(
@@ -86,31 +96,24 @@ function onpointerleave() {
   filter: blur(.04em);
 
   &:hover {
-		background-image: linear-gradient(
-			to bottom,
-			var(--elsie-hovergold) 5%,
-			var(--elsie-lightgreen) 80%
-		);
-		filter: blur(.045em);
+  background-image: linear-gradient(
+      to bottom,
+      var(--elsie-hovergold) 5%,
+      var(--elsie-lightgreen) 80%
+  );
+  filter: blur(.045em);
   }
 }
 
-.elsie-glow {
-  color: #000;
-
-  @media (prefers-reduced-motion: reduce) {
-  text-shadow:
-    .01em .015em 0em oklch(93.4% 0.0431 74.2 / 85%),
-    0em 0em .15em oklch(0.8848 0.0755 221.96 / 30%);
-  }
+.elsie-stack.glow {
+  place-items: center;
+  color: oklch(0.8848 0.0755 221.96 / 20%);
+  filter: blur(.08em);
 
   @media (prefers-reduced-motion: no-preference) {
-  text-shadow:
-    .01em .015em 0em oklch(93.4% 0.0431 74.2 / 85%),
-    calc(var(--x) * -.0045) calc(var(--y) * -.008) .15em oklch(0.8848 0.0755 221.96 / 30%);
+  translate: calc(var(--glowX) * -.004) calc(var(--glowY) * -.012);
+  transition: translate .09s linear;
   }
-  mix-blend-mode: linear-dodge;
-
 }
 
 </style>
