@@ -1,5 +1,4 @@
 <script lang="ts">
-import { Spring } from 'svelte/motion';
 
 let coords = $state({
   glowX: 0,
