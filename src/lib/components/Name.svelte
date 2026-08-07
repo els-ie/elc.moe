@@ -71,15 +71,15 @@ function onpointerleave() {
 }
 
 .elsie-stack.top {
-  text-shadow: .01em .015em 0em oklch(93.4% 0.0431 74.2 / 85%);
   background: radial-gradient(
       circle 1.5em at calc(50% + var(--gradX, 0em)) calc(50% + var(--gradY, 0em)),
       oklch(85.1% 0.0448 283.2) 0%,
       oklch(54.1% 0.1313 283.2) 100%
   );
+  text-shadow: .012em .018em 0em oklch(93.4% 0.0431 74.2);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-stroke: .025em transparent;
+  -webkit-text-stroke: .021em transparent;
   color: oklch(19% 0.022 182);
   pointer-events: none;
 }
