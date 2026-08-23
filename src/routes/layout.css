@@ -20,13 +20,24 @@ body {
 		var(--bg-base) 77%
 	);
 
-	position: relative;
+  position: relative;
 	overflow: hidden;
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: --vpos
+  }
 
 	@media screen and (min-width: 768px) {
 		--vpos: 21.9em;
 		--hpos: 34.4em;
 	}
+}
+
+.main-container {
+  grid-template-areas:
+    "a a . . . . ." auto
+
+
 }
 
 .elsie-container {
@@ -42,5 +53,5 @@ body {
 	height: 400px;
 	position: 0;
 	border-radius: 50%;
-	background: radial-gradient(circle, #44d3e3, #44d3e300 70%);
+	background: radial-gradient(circle, var(--elsie-darkgreen), #44d3e300 70%);
 }

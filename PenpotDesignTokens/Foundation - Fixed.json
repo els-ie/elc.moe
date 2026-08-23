@@ -1,0 +1,173 @@
+{
+  "opacity": {
+    "027": {
+      "$value": "0.27",
+      "$type": "opacity",
+      "$description": ""
+    },
+    "090": {
+      "$value": "0.9",
+      "$type": "opacity",
+      "$description": ""
+    },
+    "063": {
+      "$value": "0.63",
+      "$type": "opacity",
+      "$description": ""
+    },
+    "transparent": {
+      "$value": "0",
+      "$type": "opacity",
+      "$description": ""
+    },
+    "036": {
+      "$value": "0.36",
+      "$type": "opacity",
+      "$description": ""
+    },
+    "096": {
+      "$value": "0.96",
+      "$type": "opacity",
+      "$description": ""
+    },
+    "045": {
+      "$value": "0.45",
+      "$type": "opacity",
+      "$description": ""
+    },
+    "opaque": {
+      "$value": "1",
+      "$type": "opacity",
+      "$description": ""
+    },
+    "072": {
+      "$value": "0.72",
+      "$type": "opacity",
+      "$description": ""
+    },
+    "054": {
+      "$value": "0.54",
+      "$type": "opacity",
+      "$description": ""
+    },
+    "009": {
+      "$value": "0.09",
+      "$type": "opacity",
+      "$description": ""
+    },
+    "081": {
+      "$value": "0.81",
+      "$type": "opacity",
+      "$description": ""
+    },
+    "018": {
+      "$value": "0.18",
+      "$type": "opacity",
+      "$description": ""
+    }
+  },
+  "rotation": {
+    "180": {
+      "$value": "180",
+      "$type": "rotation",
+      "$description": ""
+    },
+    "270": {
+      "$value": "270",
+      "$type": "rotation",
+      "$description": ""
+    },
+    "315": {
+      "$value": "315",
+      "$type": "rotation",
+      "$description": ""
+    },
+    "330": {
+      "$value": "330",
+      "$type": "rotation",
+      "$description": ""
+    },
+    "none": {
+      "$value": "0",
+      "$type": "rotation",
+      "$description": ""
+    },
+    "090": {
+      "$value": "90",
+      "$type": "rotation",
+      "$description": ""
+    },
+    "045": {
+      "$value": "45",
+      "$type": "rotation",
+      "$description": ""
+    },
+    "half": {
+      "$value": "{rotation.180}",
+      "$type": "rotation",
+      "$description": ""
+    },
+    "quarter": {
+      "$value": "{rotation.090}",
+      "$type": "rotation",
+      "$description": ""
+    },
+    "030": {
+      "$value": "30",
+      "$type": "rotation",
+      "$description": ""
+    },
+    "golden-angle": {
+      "$value": "137.508",
+      "$type": "rotation",
+      "$description": ""
+    },
+    "threequarters": {
+      "$value": "{rotation.270}",
+      "$type": "rotation",
+      "$description": ""
+    }
+  },
+  "breakpoint": {
+    "3xl": {
+      "$value": "1680",
+      "$type": "sizing",
+      "$description": ""
+    },
+    "lg": {
+      "$value": "900",
+      "$type": "sizing",
+      "$description": ""
+    },
+    "2xl": {
+      "$value": "1440",
+      "$type": "sizing",
+      "$description": ""
+    },
+    "xs": {
+      "$value": "320",
+      "$type": "sizing",
+      "$description": ""
+    },
+    "md": {
+      "$value": "600",
+      "$type": "sizing",
+      "$description": ""
+    },
+    "sm": {
+      "$value": "360",
+      "$type": "sizing",
+      "$description": ""
+    },
+    "xl": {
+      "$value": "1200",
+      "$type": "sizing",
+      "$description": ""
+    }
+  },
+  "base": {
+    "$value": "8",
+    "$type": "dimension",
+    "$description": ""
+  }
+}

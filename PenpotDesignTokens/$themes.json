@@ -1,0 +1,110 @@
+[
+  {
+    "id": "425f2046-85a0-80c9-8008-6990fc8cc3bb",
+    "name": "Dark",
+    "group": "Color Mode",
+    "description": "",
+    "isSource": false,
+    "selectedTokenSets": {
+      "Dark": "enabled"
+    }
+  },
+  {
+    "id": "425f2046-85a0-80c9-8008-699111369921",
+    "name": "Light",
+    "group": "Color Mode",
+    "description": "",
+    "isSource": false,
+    "selectedTokenSets": {
+      "Light": "enabled"
+    }
+  },
+  {
+    "id": "5cc6beda-a65a-80e2-8008-76d11497d826",
+    "name": "Snug",
+    "group": "Density",
+    "description": "",
+    "isSource": false,
+    "selectedTokenSets": {
+      "Density - Modular": "enabled",
+      "Density - Snug": "enabled"
+    }
+  },
+  {
+    "id": "5cc6beda-a65a-80e2-8008-76d15f2a10c2",
+    "name": "Cozy",
+    "group": "Density",
+    "description": "",
+    "isSource": false,
+    "selectedTokenSets": {
+      "Density - Cozy": "enabled",
+      "Density - Modular": "enabled"
+    }
+  },
+  {
+    "id": "5cc6beda-a65a-80e2-8008-76d16eb22e82",
+    "name": "Airy",
+    "group": "Density",
+    "description": "",
+    "isSource": false,
+    "selectedTokenSets": {
+      "Density - Airy": "enabled",
+      "Density - Modular": "enabled"
+    }
+  },
+  {
+    "id": "5cc6beda-a65a-80e2-8008-77e5f486e34c",
+    "name": "Mobile",
+    "group": "Screen Size",
+    "description": "",
+    "isSource": false,
+    "selectedTokenSets": {
+      "Screen Size - Mobile": "enabled"
+    }
+  },
+  {
+    "id": "5cc6beda-a65a-80e2-8008-77e629cb63c6",
+    "name": "Tablet",
+    "group": "Screen Size",
+    "description": "",
+    "isSource": false,
+    "selectedTokenSets": {
+      "Screen Size - Tablet": "enabled"
+    }
+  },
+  {
+    "id": "5cc6beda-a65a-80e2-8008-77e634b12a83",
+    "name": "Desktop",
+    "group": "Screen Size",
+    "description": "",
+    "isSource": false,
+    "selectedTokenSets": {
+      "Screen Size - Desktop": "enabled"
+    }
+  },
+  {
+    "id": "5cc6beda-a65a-80e2-8008-77e9a47fa72f",
+    "name": "Desktop Full",
+    "group": "Screen Size",
+    "description": "",
+    "isSource": false,
+    "selectedTokenSets": {
+      "Screen Size - Desktop Full": "enabled"
+    }
+  },
+  {
+    "id": "5cc6beda-a65a-80e2-8008-77e6544805ef",
+    "name": "Defaults",
+    "group": "Global",
+    "description": "",
+    "isSource": false,
+    "selectedTokenSets": {
+      "Typography": "enabled",
+      "Foundation - Scale": "enabled",
+      "Linear Scale": "enabled",
+      "Foundation - Color": "enabled",
+      "Modular Scale": "enabled",
+      "Foundation - Fixed": "enabled"
+    }
+  }
+]

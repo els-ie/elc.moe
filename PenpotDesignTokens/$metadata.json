@@ -1,0 +1,38 @@
+{
+  "tokenSetOrder": [
+    "Foundation - Fixed",
+    "Foundation - Color",
+    "Foundation - Scale",
+    "Typography",
+    "Linear Scale",
+    "Modular Scale",
+    "Density - Modular",
+    "Density - Snug",
+    "Density - Cozy",
+    "Density - Airy",
+    "Dark",
+    "Light",
+    "Screen Size - Mobile",
+    "Screen Size - Tablet",
+    "Screen Size - Desktop",
+    "Screen Size - Desktop Full"
+  ],
+  "activeThemes": [
+    "Screen Size/Tablet",
+    "Density/Cozy",
+    "Global/Defaults",
+    "Color Mode/Dark"
+  ],
+  "activeSets": [
+    "Typography",
+    "Dark",
+    "Foundation - Scale",
+    "Linear Scale",
+    "Foundation - Color",
+    "Modular Scale",
+    "Screen Size - Tablet",
+    "Density - Cozy",
+    "Foundation - Fixed",
+    "Density - Modular"
+  ]
+}

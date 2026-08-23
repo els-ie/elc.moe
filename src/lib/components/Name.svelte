@@ -24,12 +24,11 @@ function onpointerleave() {
 }
 
 </script>
-
+<!-- svelte-ignore a11y_no_static_element_interactions -->
 <div class="elsie-stack"
     style="--gradX: {coords.gradX}px; --gradY: {coords.gradY}px; --glowX: {coords.glowX}rem; --glowY: {coords.glowY}rem"
     {onpointermove}
-    {onpointerleave}
-    aria-hidden="true">
+    {onpointerleave}>
   <span class="elsie-stack glow"
     aria-hidden="true">
     elsie
@@ -82,6 +81,8 @@ function onpointerleave() {
   -webkit-text-stroke: .021em transparent;
   color: oklch(19% 0.022 182);
   pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .elsie-stack.bottom {
@@ -109,6 +110,8 @@ function onpointerleave() {
   place-items: center;
   color: oklch(0.8848 0.0755 221.96 / 20%);
   filter: blur(.08em);
+  user-select: none;
+  -webkit-user-select: none;
 
   @media (prefers-reduced-motion: no-preference) {
   translate: calc(var(--glowX) * -.004) calc(var(--glowY) * -.012);

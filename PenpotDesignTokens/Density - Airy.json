@@ -1,0 +1,7 @@
+{
+  "density": {
+    "$value": "{golden-ratio}",
+    "$type": "dimension",
+    "$description": ""
+  }
+}

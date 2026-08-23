@@ -1,0 +1,62 @@
+{
+  "major-seventh": {
+    "$value": "1.875",
+    "$type": "dimension",
+    "$description": ""
+  },
+  "minor-second": {
+    "$value": "1.067",
+    "$type": "dimension",
+    "$description": ""
+  },
+  "major-second": {
+    "$value": "1.125",
+    "$type": "dimension",
+    "$description": ""
+  },
+  "minor-seventh": {
+    "$value": "1.778",
+    "$type": "dimension",
+    "$description": ""
+  },
+  "octave": {
+    "$value": "2",
+    "$type": "dimension",
+    "$description": ""
+  },
+  "golden-ratio": {
+    "$value": "1.618",
+    "$type": "dimension",
+    "$description": ""
+  },
+  "augmented-fourth": {
+    "$value": "1.414",
+    "$type": "dimension",
+    "$description": ""
+  },
+  "perfect-fifth": {
+    "$value": "1.5",
+    "$type": "dimension",
+    "$description": ""
+  },
+  "major-third": {
+    "$value": "1.25",
+    "$type": "dimension",
+    "$description": ""
+  },
+  "major-sixth": {
+    "$value": "1.667",
+    "$type": "dimension",
+    "$description": ""
+  },
+  "perfect-fourth": {
+    "$value": "1.333",
+    "$type": "dimension",
+    "$description": ""
+  },
+  "minor-third": {
+    "$value": "1.2",
+    "$type": "dimension",
+    "$description": ""
+  }
+}

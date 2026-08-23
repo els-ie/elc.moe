@@ -1,0 +1,49 @@
+{
+  "modular": {
+    "xs": {
+      "$value": "{modular.2xs}*{density}",
+      "$type": "sizing",
+      "$description": ""
+    },
+    "md": {
+      "$value": "{modular.sm}*{density}",
+      "$type": "sizing",
+      "$description": ""
+    },
+    "3xl": {
+      "$value": "{modular.2xl}*{density}",
+      "$type": "sizing",
+      "$description": ""
+    },
+    "3xs": {
+      "$value": "{base}*{density}",
+      "$type": "sizing",
+      "$description": ""
+    },
+    "2xl": {
+      "$value": "{modular.xl}*{density}",
+      "$type": "sizing",
+      "$description": ""
+    },
+    "lg": {
+      "$value": "{modular.md}*{density}",
+      "$type": "sizing",
+      "$description": ""
+    },
+    "xl": {
+      "$value": "{modular.lg}*{density}",
+      "$type": "sizing",
+      "$description": ""
+    },
+    "sm": {
+      "$value": "{modular.xs}*{density}",
+      "$type": "sizing",
+      "$description": ""
+    },
+    "2xs": {
+      "$value": "{modular.3xs}*{density}",
+      "$type": "sizing",
+      "$description": ""
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "dimension": {
+    "viewport": {
+      "width": {
+        "$value": "{breakpoint.xs}",
+        "$type": "dimension",
+        "$description": ""
+      }
+    }
+  }
+}

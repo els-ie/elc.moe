@@ -1,0 +1,16 @@
+{
+  "layerBase": {
+    "background": {
+      "$value": "{color.blue.950}",
+      "$type": "color",
+      "$description": ""
+    }
+  },
+  "heading": {
+    "text": {
+      "$value": "{color.white}",
+      "$type": "color",
+      "$description": ""
+    }
+  }
+}
