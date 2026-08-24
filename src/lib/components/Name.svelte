@@ -7,6 +7,8 @@ let coords = $state({
   gradY: -333
 });
 
+// let isAnimating = $state(false);
+
 function onpointermove(event: PointerEvent) {
   const target = event.currentTarget as HTMLElement;
   const rect = target.getBoundingClientRect();
@@ -23,26 +25,37 @@ function onpointerleave() {
   coords.gradY = -333
 }
 
+// function triggerAnimation() {
+//   isAnimating = true;
+//   setTimeout(() => (isAnimating = false), 500);
+// }
+
 </script>
-<!-- svelte-ignore a11y_no_static_element_interactions -->
-<div class="elsie-stack"
-    style="--gradX: {coords.gradX}px; --gradY: {coords.gradY}px; --glowX: {coords.glowX}rem; --glowY: {coords.glowY}rem"
-    {onpointermove}
-    {onpointerleave}>
+<button class="elsie-stack elsie-click"
+  style="--gradX: {coords.gradX}px; --gradY: {coords.gradY}px; --glowX: {coords.glowX}rem; --glowY: {coords.glowY}rem"
+  {onpointermove}
+  {onpointerleave}
+  >
+
   <span class="elsie-stack glow"
     aria-hidden="true">
     elsie
   </span>
-  <span class="elsie-stack bottom">
+
+  <a class="elsie-stack bottom"
+  href="https://github.com/els-ie"
+  aria-label="Check out my GitHub"
+  >
     elsie
-  </span>
+  </a>
+
   <span
     class="elsie-stack top"
     aria-hidden="true"
     >
     elsie
   </span>
-</div>
+</button>
 
 
 <style>
@@ -50,11 +63,11 @@ function onpointerleave() {
 .elsie-stack {
   display: grid;
   grid-template-areas: "stack";
+  text-align: center;
 }
 
 .elsie-stack.top, .elsie-stack.bottom, .elsie-stack.glow {
   grid-area: stack;
-  place-self: center;
   font-family: "McLaren", sans-serif;
   font-size: 8em;
   letter-spacing: var(--tracking, .15em);
@@ -107,7 +120,6 @@ function onpointerleave() {
 }
 
 .elsie-stack.glow {
-  place-items: center;
   color: oklch(0.8848 0.0755 221.96 / 20%);
   filter: blur(.08em);
   user-select: none;
@@ -119,4 +131,20 @@ function onpointerleave() {
   }
 }
 
+button {
+  background-color: transparent;
+  border: transparent;
+}
+
+/* .elsie-click { */
+/*   @media (prefers-reduced-motion: no-preference) { */
+/*     animation: elsie-click-animation 0.5s ease-in-out; */
+/*   } */
+/* } */
+/**/
+/* @keyframes elsie-click-animation { */
+/*   0%, 100% { transform: scale(1);} */
+/*   25% { transform: scale(0.9);} */
+/*   75% { transform: scale(0.7);} */
+/* } */
 </style>
