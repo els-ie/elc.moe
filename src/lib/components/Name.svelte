@@ -31,8 +31,7 @@ function onpointerleave() {
 // }
 
 </script>
-<!-- svelte-ignore a11y_no_static_element_interactions -->
-<div class="elsie-stack"
+<button class="elsie-stack"
   style="--gradX: {coords.gradX}px; --gradY: {coords.gradY}px; --glowX: {coords.glowX}rem; --glowY: {coords.glowY}rem"
   {onpointermove}
   {onpointerleave}
@@ -56,7 +55,7 @@ function onpointerleave() {
     >
     elsie
   </span>
-</div>
+</button>
 
 
 <style>
@@ -132,10 +131,10 @@ function onpointerleave() {
   }
 }
 
-/* button { */
-/*   background-color: transparent; */
-/*   border: transparent; */
-/* } */
+button {
+  background-color: transparent;
+  border: transparent;
+}
 
 /* .elsie-click { */
 /*   @media (prefers-reduced-motion: no-preference) { */
