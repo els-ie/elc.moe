@@ -45,6 +45,7 @@ function onpointerleave() {
   <a class="elsie-stack bottom"
   href="https://github.com/els-ie"
   aria-label="Check out my GitHub"
+  draggable="false"
   >
     elsie
   </a>
@@ -64,6 +65,10 @@ function onpointerleave() {
   display: grid;
   grid-template-areas: "stack";
   text-align: center;
+
+  @media (prefers-reduced-motion: no-preference) {
+    &:active { animation: elsie-click-animation 1s ease-in-out;}
+  }
 }
 
 .elsie-stack.top, .elsie-stack.bottom, .elsie-stack.glow {
@@ -136,15 +141,11 @@ button {
   border: transparent;
 }
 
-/* .elsie-click { */
-/*   @media (prefers-reduced-motion: no-preference) { */
-/*     animation: elsie-click-animation 0.5s ease-in-out; */
-/*   } */
-/* } */
-/**/
-/* @keyframes elsie-click-animation { */
-/*   0%, 100% { transform: scale(1);} */
-/*   25% { transform: scale(0.9);} */
-/*   75% { transform: scale(0.7);} */
-/* } */
+
+
+@keyframes elsie-click-animation {
+  0%, 100% { transform: scale(1);}
+  25% { transform: scale(0.9);}
+  75% { transform: scale(0.2);}
+}
 </style>
