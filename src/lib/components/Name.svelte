@@ -31,6 +31,7 @@ function onpointerleave() {
 // }
 
 </script>
+
 <button class="elsie-stack"
   style="--gradX: {coords.gradX}px; --gradY: {coords.gradY}px; --glowX: {coords.glowX}rem; --glowY: {coords.glowY}rem"
   {onpointermove}
@@ -57,7 +58,6 @@ function onpointerleave() {
     elsie
   </span>
 </button>
-
 
 <style>
 
@@ -141,7 +141,9 @@ button {
   border: transparent;
 }
 
-
+a {
+    text-decoration: none;
+}
 
 @keyframes elsie-click-animation {
   0%, 100% { transform: scale(1);}
